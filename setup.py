@@ -11,11 +11,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-<<<<<<< HEAD
-            "claude2openai=claude2openai.main:main",
-=======
             "claude-openai-bridge=claude2openai.main:main",
->>>>>>> new bmDdFBmHb4
         ],
     },
     python_requires=">=3.9",
