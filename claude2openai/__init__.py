@@ -6,3 +6,5 @@ allowing you to use Claude models with OpenAI-compatible clients.
 """
 
 __version__ = "0.1.0"
+
+from claude2openai.main import main, create_app
