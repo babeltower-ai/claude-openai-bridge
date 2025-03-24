@@ -1,8 +1,8 @@
-# Claude2OpenAI
+# Claude-OpenAI-Bridge
 
 [中文版本](README_zh.md)
 
-Claude2OpenAI is an efficient Python adapter that allows you to interact with Anthropic's Claude API using OpenAI API clients. It provides a proxy server that converts OpenAI API requests to Claude API requests and transforms Claude's responses back to OpenAI format.
+Claude-OpenAI-Bridge is an efficient Python adapter that allows you to interact with Anthropic's Claude API using OpenAI API clients. It provides a proxy server that converts OpenAI API requests to Claude API requests and transforms Claude's responses back to OpenAI format.
 
 ## Features
 
@@ -17,22 +17,22 @@ Claude2OpenAI is an efficient Python adapter that allows you to interact with An
 
 ### One-click execution with uvx
 
-[uvx](https://github.com/astral-sh/uv) is a fast Python package manager and installer. You can use uvx to run Claude2OpenAI with a single command, without prior installation:
+[uvx](https://github.com/astral-sh/uv) is a fast Python package manager and installer. You can use uvx to run Claude-OpenAI-Bridge with a single command, without prior installation:
 
 ```bash
-uvx run claude2openai
+uvx run claude-openai-bridge
 ```
 
 Or specify host and port:
 
 ```bash
-HOST=0.0.0.0 PORT=8080 uvx run claude2openai
+HOST=0.0.0.0 PORT=8080 uvx run claude-openai-bridge
 ```
 
 ### Installation with pip
 
 ```bash
-pip install claude2openai
+pip install claude-openai-bridge
 ```
 
 ## Usage
@@ -56,10 +56,10 @@ export ANTHROPIC_ENDPOINT=https://api.anthropic.com/v1/messages
 
 ```bash
 # If installed
-claude2openai
+claude-openai-bridge
 
 # Or use uvx for one-click execution
-uvx run github.com/yourusername/claude2openai
+uvx run claude-openai-bridge
 ```
 
 ### Using OpenAI Client
@@ -73,7 +73,7 @@ from openai import OpenAI
 
 client = OpenAI(
     api_key="your-anthropic-api-key",  # Use your Anthropic API key
-    base_url="http://localhost:8080/v1"  # Point to your Claude2OpenAI server
+    base_url="http://localhost:8080/v1"  # Point to your Claude-OpenAI-Bridge server
 )
 
 response = client.chat.completions.create(

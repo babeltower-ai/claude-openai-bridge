@@ -6,8 +6,8 @@ import os
 import sys
 from openai import OpenAI
 
-# 确保 Claude2OpenAI 服务器正在运行
-# 可以使用 `claude2openai` 或 `uvx run claude2openai` 启动
+# 确保服务器正在运行
+# 可以使用 `uvx run claude-openai-bridge` 启动
 
 # 设置 OpenAI 客户端
 client = OpenAI(
