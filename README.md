@@ -20,13 +20,13 @@ Claude-OpenAI-Bridge is an efficient Python adapter that allows you to interact 
 [uvx](https://github.com/astral-sh/uv) is a fast Python package manager and installer. You can use uvx to run Claude-OpenAI-Bridge with a single command, without prior installation:
 
 ```bash
-uvx run claude-openai-bridge
+uvx claude-openai-bridge
 ```
 
 Or specify host and port:
 
 ```bash
-HOST=0.0.0.0 PORT=8080 uvx run claude-openai-bridge
+HOST=0.0.0.0 PORT=8080 uvx claude-openai-bridge
 ```
 
 ### Installation with pip
@@ -59,7 +59,7 @@ export ANTHROPIC_ENDPOINT=https://api.anthropic.com/v1/messages
 claude-openai-bridge
 
 # Or use uvx for one-click execution
-uvx run claude-openai-bridge
+uvx claude-openai-bridge
 ```
 
 ### Using OpenAI Client
