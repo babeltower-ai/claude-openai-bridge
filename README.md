@@ -29,38 +29,7 @@ Or specify host and port:
 HOST=0.0.0.0 PORT=8080 uvx claude-openai-bridge
 ```
 
-### Installation with pip
-
-```bash
-pip install claude-openai-bridge
-```
-
 ## Usage
-
-### Setting Environment Variables
-
-Before running, you need to set the following environment variables:
-
-```bash
-# Optional: Set the listening address (default is 0.0.0.0)
-export HOST=127.0.0.1
-
-# Optional: Set the listening port (default is 8080)
-export PORT=8080
-
-# Optional: Set the Anthropic API endpoint (default is https://api.anthropic.com/v1/messages)
-export ANTHROPIC_ENDPOINT=https://api.anthropic.com/v1/messages
-```
-
-### Starting the Server
-
-```bash
-# If installed
-claude-openai-bridge
-
-# Or use uvx for one-click execution
-uvx claude-openai-bridge
-```
 
 ### Using OpenAI Client
 
