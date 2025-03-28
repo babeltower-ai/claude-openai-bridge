@@ -27,38 +27,8 @@ uvx claude-openai-bridge
 HOST=0.0.0.0 PORT=8080 uvx claude-openai-bridge
 ```
 
-### 使用 pip 安装
-
-```bash
-pip install claude-openai-bridge
-```
 
 ## 使用方法
-
-### 设置环境变量
-
-在运行之前，您需要设置以下环境变量：
-
-```bash
-# 可选：设置监听地址（默认为 0.0.0.0）
-export HOST=127.0.0.1
-
-# 可选：设置监听端口（默认为 8080）
-export PORT=8080
-
-# 可选：设置 Anthropic API 端点（默认为 https://api.anthropic.com/v1/messages）
-export ANTHROPIC_ENDPOINT=https://api.anthropic.com/v1/messages
-```
-
-### 启动服务器
-
-```bash
-# 如果已安装
-claude-openai-bridge
-
-# 或使用 uvx 一键执行
-uvx claude-openai-bridge
-```
 
 ### 使用 OpenAI 客户端
 
